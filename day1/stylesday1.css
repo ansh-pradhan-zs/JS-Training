@@ -1,0 +1,27 @@
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 25vw;
+  outline: none;
+}
+
+.input-group > input {
+  padding: 8px;
+  border: 1px solid rgb(55, 55, 215);
+  border-radius: 5px;
+}
+
+.input-group > button {
+  padding: 8px;
+  border-radius: 5px;
+  background-color: rgb(138, 138, 229);
+  border: transparent;
+  color: white;
+}
+
+.container-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
