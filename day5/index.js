@@ -1,6 +1,7 @@
 class Counter {
   constructor() {
     this.count = 0;
+    this.increment = this.increment.bind(this);
   }
 
   increment() {
@@ -9,7 +10,8 @@ class Counter {
   }
 
   start() {
-    setInterval(() => this.increment(), 1000);
+    setInterval(this.increment, 1000);
+    // setInterval(() => this.increment(), 1000);
   }
 }
 
