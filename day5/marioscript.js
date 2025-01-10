@@ -5,7 +5,7 @@ function moveMario() {
     if (screen.width == position) {
       position = 0;
     }
-    position += 5;
+    position += 3;
     mario.style.marginLeft = `${position}px`;
   }, 10);
 }
