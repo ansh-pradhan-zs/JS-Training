@@ -19,8 +19,12 @@ function generateRandomDates(
 
 const randomDates = generateRandomDates(10, 2021, 2024);
 
-const ascDates = [...randomDates].sort((a, b) => new Date(a) - new Date(b));
-const descDates = [...randomDates].sort((a, b) => new Date(b) - new Date(a));
+const ascDates = [...randomDates].sort(
+  (prevDate, nextDate) => new Date(prevDate) - new Date(nextDate)
+);
+const descDates = [...randomDates].sort(
+  (prevDate, nextDate) => new Date(nextDate) - new Date(prevDate)
+);
 
 const tbody = document.querySelector("tbody");
 
