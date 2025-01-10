@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mario Game</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      .gamebg {
+        width: 100%;
+        height: 100vh;
+      }
+      .container {
+        position: relative;
+      }
+      .mario {
+        position: absolute;
+        left: 10px;
+        bottom: 230px;
+      }
+      .mario-icon {
+        width: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="gamebackground.jpg" alt="gamebg" class="gamebg" />
+      <div class="mario">
+        <img src="mario.png" alt="mario" class="mario-icon" id="mario" />
+      </div>
+    </div>
+    <audio controls loop autoplay>
+      <source src="mario_music.mp3" type="audio/mp3" />
+    </audio>
+  </body>
+  <script src="marioscript.js"></script>
+</html>
